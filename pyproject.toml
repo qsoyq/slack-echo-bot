@@ -7,6 +7,8 @@ requires-python = ">=3.10"
 dependencies = [
     "ipython>=8.37.0",
     "pre-commit>=4.5.1",
+    "slack-bolt>=1.27.0",
+    "slack-sdk>=3.39.0",
     "typer-utils@git+https://github.com/qsoyq/typer_utils",
 ]
 
@@ -102,6 +104,8 @@ explicit_package_bases = true
 [[tool.mypy.overrides]]
 module = [
     "typer_utils.*",
+    "slack_bolt",
+    "slack_bolt.*",
 ]
 ignore_missing_imports = true
 follow_untyped_imports = true

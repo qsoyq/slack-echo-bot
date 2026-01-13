@@ -49,6 +49,7 @@ repos:
                 - httpx
                 - asyncache
                 - pytest
+                - slack_bolt
                 - types-pytz
                 - types-cachetools
                 - types-requests
