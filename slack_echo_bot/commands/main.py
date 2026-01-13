@@ -40,7 +40,7 @@ def handle_echo_command(ack, body, respond):
 
     user_id = body['user_id']
     text = body.get('text', '').strip()
-
+    print(f'received msg from {user_id}, {text}')
     if not text:
         respond(
             response_type='ephemeral',   # 只对发命令的人可见
@@ -52,6 +52,8 @@ def handle_echo_command(ack, body, respond):
         response_type='in_channel',     # 频道里所有人可见
         text=f'<@{user_id}> 说：{text}'
     )
+
+
 
 
 
