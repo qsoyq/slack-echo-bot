@@ -1,9 +1,7 @@
-# python-cli-template
-
-Command line application template for python.
+# slack-echo-bot
 
 ## Install
 
 ```bash
-pip install git+https://github.com/qsoyq/python-cli-template.git
+pip install git+https://github.com/qsoyq/slack-echo-bot.git
 ```
